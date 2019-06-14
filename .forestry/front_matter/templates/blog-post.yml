@@ -1,4 +1,22 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: post-title
+  type: text
+  config:
+    required: true
+  label: Post Title
+- name: post_body
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Post Body
+- name: post_tag
+  type: tag_list
+  default: []
+  label: Post Tag
